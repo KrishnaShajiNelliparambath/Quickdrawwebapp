@@ -10,7 +10,7 @@ sketch="";
 score= 0;
 
 function preload(){
-    classifier=ml5.imageClassifier("DoodelNet");
+    classifier=ml5.imageClassifier("DoodleNet");
     
 }
 
@@ -18,7 +18,7 @@ function ubdatecanvas(){
     background("white");
     random_number = Math.floor((Math.random()*quick_draw_data_set.length)+1);
     Element_of_array = quick_draw_data_set[random_number];
-    sketch=document.getElementById("thingname").innerHTML =Element_of_array;
+    document.getElementById("thingname").innerHTML =Element_of_array;
 
 }
 
@@ -29,7 +29,7 @@ function draw(){
         line(pmouseX,pmouseY,mouseX,mouseY)
     }
 checksketch();
-if(drawnsketch==sketch){
+if(drawnsketch==Element_of_array){
 answerholder="set";
 score = score+1;
 document.getElementById("score").innerHTML = "Score: "+score;

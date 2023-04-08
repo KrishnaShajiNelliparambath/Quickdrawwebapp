@@ -4,12 +4,13 @@ body{
     
     #score{
         font-size: 20px;
-        margin-right: 2000px;
+      float: right;
+      margin-right: 50px;
     }
     #time{
         font-size: 20px;
-        margin-left: 1100px;
-        
+        float: left;
+        margin-left:50px;
     }
     
     h1
